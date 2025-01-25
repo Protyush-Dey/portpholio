@@ -1,0 +1,358 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;   
+     color: black;
+     scroll-behavior: smooth;
+}
+/* navbar */
+#nav-bar1{
+    display: none;
+}
+ #nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 50px 0;
+    height: 15vh;
+ }
+ #logo{
+    margin-left: 20PX;
+    font-size: 25px;
+ }
+ #button {
+    margin-right: 10px;
+}
+    #button ul{
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin:20px;
+    list-style: none;
+    
+ }
+ #button ul li a{  
+    text-decoration: none;
+    font-size: 22px;
+    position: relative;
+    font-weight: 600;
+    transition: 0.3s,ease;
+}
+#button ul li a:hover{
+    color: #6e6d6d; 
+}
+#button ul li a::after{
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 0;
+    background-color: #6e6d6d;
+    transition: width 0.3s ease;
+}
+#button ul li a:hover:after{
+    width: 100%;
+}
+/* home */
+#home{
+    width: 100%;
+    gap: 100px;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 250px 0;
+}
+#home .image img{
+    border-radius: 50%;
+    width: 10cm;
+    height: 10cm;
+}
+#home .home-text  h1{
+    font-size: 35px;
+    margin-top: 5px;
+}
+#home .home-text  p{
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: justify;
+}
+#home .home-text .social-media{
+    margin-top: 20px;
+    display: flex;
+
+
+}
+#home .home-text .social-media a {
+    display: flex;
+    text-decoration: none;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border: 2px black solid;
+    font-size: 30px;
+    margin-left: 15px;
+    transition: 0.3s ease;
+}
+#home .home-text .social-media a:hover{
+    background-color: black;
+    font-size: 25px;
+}
+#home .home-text .social-media a .fa-brands:hover{
+    color: white;
+}
+#projects {
+    width: 100%;
+
+}
+ .heading{
+    text-align: center;
+    font-size: 1.2cm;
+    margin-bottom: 80px;
+
+}
+/* about */
+#about{
+    width: 100%;
+    height: 100vh;
+    padding-top:20px;
+}
+ #about-element{
+    display: flex;
+    align-items: center;
+    padding:80px 250px 0 350px;
+    justify-content: center;
+    gap: 100PX;
+}
+#about-element img{
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    border: 4px solid #000000;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.7);
+}
+#about-element p{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+}
+/* skill */
+#skills{
+    width: 100%;
+    height: 100vh;
+    padding-top: 20px;
+}
+@keyframes slideIn{
+    from{
+        width: 0%;
+    }
+    to{
+        width: var(--final-width);;
+    }
+}
+#skill .percent div{
+    animation:slideIn 2s ease-out ;
+}
+#skill-card{
+    width: 80%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+    margin: 0 auto 0;
+    box-shadow: 0 0 5px rgb(00 ,00, 00, 0.5);
+    padding: 50px;
+}
+#skill-card .percent{
+    width: 380px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 5px rgb(00 ,00, 00, 0.5);
+    height: 10px;
+    border: 1px black solid;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+#html-percent{
+    height: 10px;
+    --final-width: 70%;
+    background-color: black;
+    border-radius: 20px;
+    width: 0%;
+    animation: slideIn 2s ease-out forwards;
+}
+#css-percent{
+    height: 10px;
+    --final-width:65%;
+    background-color: black;
+    border-radius: 20px;
+    width: 0;
+    animation: slideIn 2s ease-out forwards;
+}
+#js-percent{
+    height: 10px;
+    --final-width: 45%;
+    background-color: black;
+    border-radius: 20px;
+    width: 0;
+    animation: slideIn 2s ease-out forwards;
+}
+#c-percent{
+    height: 10px;
+    --final-width: 80%;
+    background-color: black;
+    border-radius: 20px;
+    width: 0;
+    animation: slideIn 2s ease-out forwards;
+}
+#java-percent{
+    height: 10px;
+    --final-width: 50%;
+    background-color: black;
+    border-radius: 20px;
+    width: 0;
+    animation: slideIn 2s ease-out forwards;
+}
+/* project */
+#projects{
+    width: 100%;
+    height: 100vh;
+    padding-top: 20px;
+}
+#projects #portpholio{
+display: flex;
+justify-content: space-evenly;
+}
+#projects #portpholio .project{
+    flex: 0 0 23%;
+    border: 1px solid black;
+    box-shadow: 20px 20px 30px rgb(0, 0, 0,0.05);
+    margin: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 10px ;
+    align-items: center;
+     transition: 0.2s ,ease;
+}
+#projects #portpholio .project:hover{
+    box-shadow: 20px 20px 30px rgb(0, 0, 0,0.10);
+}
+#projects #portpholio .project img{
+    width: 90%;
+    border: 1px solid black;
+    margin: 15px;
+    border-radius: 15px;
+}
+#projects #portpholio .project h4{
+    text-align: center;
+    font-size: .6cm;
+}
+#projects #portpholio .project .visit {
+    margin: 20px 50px 10px;
+}
+#projects #portpholio .project .visit ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#projects #portpholio .project .visit ul a{
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: .3s ease;
+
+}
+#projects #portpholio .project .visit ul a:hover{
+    background-color: black;
+    color: white;
+}
+.slider-container{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+.slider{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+
+/* contact */
+#contact{
+    width: 100%;
+    height: 100vh;
+    padding-top: 20px;
+}
+#contact .contact{
+display: grid;
+width: 60%;
+margin: 100px auto 0;
+}
+#contact .contact .row{
+    height: 1.2cm; 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#contact .contact .row .contact-inputs{
+    height: 1.2cm;
+    width: 47%;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 15px;
+    padding-left: 10px;
+
+}
+#contact .contact  .contact-inputs{
+    height: 6cm;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 20px;
+    border: 2px black solid;
+    box-shadow: 0 0 5px rgb(00 ,00, 00, 0.5);
+    margin-bottom: 20px;
+}
+#contact .contact button{
+    text-align: center;
+    border-radius: 10px;
+    height: 1.2cm;
+    font-size: .8cm;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+#contact .contact button:hover{
+    background-color: #6e6d6d;
+    color: white;
+    box-shadow: 0 0 10px rgb(00 ,00, 00, 0.5);
+
+}

@@ -1,0 +1,144 @@
+@media only screen and (max-width: 600px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    body{
+        width: 100%;
+    }
+    /* nav bar */
+    #nav-bar1{
+        display:block;
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px 0;
+    height: 15vh;
+    }
+    #nav-bar1 ul {
+        transition: all 0.3s ease;
+    }
+    
+    .show-menu {
+        display: flex !important;
+    }
+    #nav-bar{
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    
+    .hamburger div {
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 6px 0;
+    }
+    
+    #nav-bar1 ul {
+        display: none; /* Hide menu items initially */
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .show-menu {
+        display: flex !important;
+    }
+    
+    /* home */
+    #home{
+        width: 100%;
+        height: 70vh;
+        display: grid;
+        padding-left: 0;
+        padding: 10px 55px  0;
+        gap: 10px;
+    }
+    #home img{
+        padding: 0;
+        margin: 0;
+    }
+    #home .home-text-h{
+
+        display: none;
+    }
+    #home .home-text .social-media{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+    }
+    /* about */
+    #about{
+                
+        width: 100%;
+        height: 120vh;
+    }
+    #about #about-element{
+        display: grid;
+        padding:0px 50px 0 50px;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    #about #about-element img{
+        margin-left: 65px;
+        height: 200px;
+    }
+    /* skills */
+    #skills{
+        width: 100%;
+        height: 120vh;
+    }
+    #skill-card{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #skill-card .percent{
+        width: 98%;
+    }
+    /* project */
+    #projects{
+        height: 110vh;
+    }
+    #projects #portpholio .project{
+        flex: 0 0 75%;
+        margin: 10px;
+    }
+    /* contact */
+    #contact{
+        
+        width: 100%;
+        height: 100vh;
+        padding-top: 20px;
+    }   
+    #contact .contact{
+    width: 90%;
+    margin: 20px auto 0;
+
+    }
+    #contact .contact .row{
+        margin-bottom: 90px;
+        flex-direction: column;
+        gap: 10px
+    }
+    #contact .contact .row .contact-inputs{
+        width:100%;
+    }
+    #contact .contact  .contact-inputs{
+        height: 7cm;
+        margin-bottom: 10px;
+    }
+    #contact .contact button{
+        margin-top: 20px;
+    }
+    
+}

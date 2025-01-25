@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portpholio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nanum+Gothic&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navigation bar-->
+    <nav id="nav-bar">
+        <div id="logo">
+            <h1>Protyush</h1>
+        </div>
+        <div id="button">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--Navigation bar 2-->
+    <nav id="nav-bar1">
+        <div id="logo1">
+            <h1>Protyush</h1>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="button1">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+        <!--Home-->
+    <div id="home">
+        <div class="image">
+            <img src="picture1.jpg" >
+        </div>
+        <div class="home-text">
+            <h3 class="home-text-h">Hello, I'm</h3>
+            <h1 class="home-text-h">Protyush Dey</h1>
+            <p class="home-text-h">I am passionate about front-end web development and love building websites that are both functional and visually appealing. Using HTML, CSS, and JavaScript, I enjoy turning design ideas into reality. </p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/protyush-dey-31983a265/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Protyush-Dey"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/Protyush2064"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/protyush19/"><i class="fa-brands fa-instagram"></i></a>
+                
+            </div>
+        </div>
+    </div>
+            <!--About-->
+            <div id="about">
+                <h1 class="heading">About</h1>
+                <div id="about-element">
+                <img src="about1.jpg" alt="">
+                <p>Hi, I'm Protyush Dey! As a beginner web developer, I am driven by a passion for crafting beautiful and user-friendly websites. My journey in web development is fueled by a strong dedication to learning and mastering the core technologies of HTML, CSS, and JavaScript. I am eager to grow my skills, take on new challenges, and explore the vast possibilities that the web has to offer. Every project is an opportunity to refine my abilities and bring my creative ideas to life. Thanks for stopping by my portfolio—I am excited to share my progress and future projects with you!
+                </p>
+            </div>
+            </div> 
+            <!--Skills-->
+            <div id="skills">
+                <h1 class="heading">Skills</h1>
+                <div id="skill-card">
+                    <div id="HTML" class="language">
+                        <h2>HTML</h2>
+                        <div class="percent" >
+                            <div id="html-percent"></div>
+                        </div>
+                    </div>
+                    <div id="css" class="language">
+                        <h2>CSS</h2>
+                        <div class="percent">
+                            <div id="css-percent"></div>
+                        </div>
+                    </div>
+                    <div id="js" class="language">
+                        <h2>JAVASCRIPT</h2>
+                        <div class="percent">
+                            <div id="js-percent"></div>
+                        </div>
+                    </div>
+                    <div id="C-lang" class="language">
+                        <h2>C</h2>
+                        <div class="percent">
+                            <div id="c-percent"></div>
+                        </div>
+                    </div>
+                    <div id="java" class="language">
+                        <h2>JAVA</h2>
+                        <div class="percent">
+                            <div id="java-percent"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!--Projects-->
+
+            <div id="projects">
+                <h1 class="heading">Projects</h1>
+                <div class="slider-container" >
+                <div id="portpholio" class="slider">
+                    <!-- project items -->
+                <div class="project">
+                    <img src="Qr-code-generator.jpg" alt="">
+                    <h4>QR Code Generator</h4>
+                    <div class="visit">
+                        <ul>
+                            <li><a href="https://github.com/Protyush-Dey/qrcode">GitHub</a></li>
+                            <li><a href="https://protyush-dey.github.io/qrcode/">Live Demo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="Guess-my-number.png" alt="">
+                    <h4>Guess my number</h4>
+                    <div class="visit">
+                        <ul>
+                            <li><a href="https://github.com/Protyush-Dey/Guess-The-Number">GitHub</a></li>
+                            <li><a href="https://protyush-dey.github.io/Guess-The-Number/">Live Demo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="To-do-list.jpg" alt="">
+                    <h4>To-do-list</h4>
+                    <div class="visit">
+                        <ul>
+                            <li><a href="https://github.com/Protyush-Dey/To-Do-list">GitHub</a></li>
+                            <li><a href="https://protyush-dey.github.io/To-Do-list/">Live Demo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="calcularor.jpg" alt="">
+                    <h4>Calculator</h4>
+                    <div class="visit">
+                        <ul>
+                            <li><a href="https://github.com/Protyush-Dey/calculator">GitHub</a></li>
+                            <li><a href="https://protyush-dey.github.io/calculator/">Live Demo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="weather-api.jpg" alt="">
+                    <h4>Weather of cities </h4>
+                    <div class="visit">
+                        <ul>
+                            <li><a href="https://github.com/Protyush-Dey/weather-api">GitHub</a></li>
+                            <li><a href="https://protyush-dey.github.io/weather-api/">Live Demo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="resitance.png" alt="">
+                    <h4>Resistance Calculator</h4>
+                    <div class="visit">
+                        <ul>
+                            <li><a href="https://github.com/Protyush-Dey/resistance">GitHub</a></li>
+                            <li><a href="https://protyush-dey.github.io/resistance/">Live Demo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                    <button class="slider-btn prev-btn" onclick="slideProjects(-1)">&#10094;</button>
+                    <button class="slider-btn next-btn" onclick="slideProjects(1)">&#10095;</button>
+            </div>
+            </div>
+            <!--Contact-->
+            <div id="contact">
+                <h1 class="heading">Contact Me</h1>
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact">
+                    <input type="hidden" name="access_key" value="96813f43-7c77-4275-8c38-db7cca1f6f36">
+                    <div class="row">
+                    <input type="text" name="name" placeholder="Your Name" class="contact-inputs row" required> 
+                    <input type="email" name="email" placeholder="Your Email" class="contact-inputs row " required>
+                </div>
+                    <textarea name="massage" placeholder="Your Massage" class="contact-inputs" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <script src="script.js"></script>
+</body>
+</html>
